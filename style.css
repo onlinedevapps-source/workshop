@@ -540,10 +540,12 @@ body {
         flex-direction: column;
         width: 100%;
         padding: 0 40px;
+        gap: 15px;
     }
 
     .btn-pill {
         width: 100%;
+        padding: 12px 0;
     }
 
     .modules-grid-large {
@@ -551,10 +553,10 @@ body {
         gap: 15px;
     }
 
-    .modules-grid,
     .split-content {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
     }
 
     .section-full {
@@ -563,5 +565,117 @@ body {
 
     .nav-links {
         display: none;
+    }
+
+    .nav {
+        padding: 0 20px;
+    }
+
+    .title-white {
+        font-size: 2.5rem;
+    }
+
+    .clean-list li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 0;
+    }
+
+    .brand-name {
+        font-size: 0.85rem;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .nav-pill {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .hero-full {
+        padding: 15vh 0 10vh;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-chip {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .minimal-box {
+        padding: 40px;
+    }
+
+    .logo-seal {
+        width: 100px;
+    }
+
+    .contact-card h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-meta-pill {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .wa-pill-fixed {
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-cta-group {
+        padding: 0 20px;
+    }
+
+    .section-full {
+        padding: 60px 0;
+    }
+
+    .section-intro {
+        margin-bottom: 40px;
+    }
+
+    .brand-name {
+        display: none;
+        /* Hide text on very small screens to avoid header overlap */
+    }
+
+    .brand-logo {
+        height: 20px;
     }
 }
