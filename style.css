@@ -63,7 +63,8 @@ body {
 }
 
 .brand-logo {
-    height: 24px;
+    height: 48px;
+    /* Increased from 24px */
     width: auto;
 }
 
@@ -609,6 +610,11 @@ body {
         margin-bottom: 0.8rem;
     }
 
+    .hero-img {
+        object-position: center 30%;
+        /* Better framing to "zoom out" the subject */
+    }
+
     .hero-subtitle {
         font-size: 0.9rem;
         padding: 0 20px;
@@ -676,6 +682,7 @@ body {
     }
 
     .brand-logo {
-        height: 20px;
+        height: 38px;
+        /* Increased from 20px */
     }
 }
