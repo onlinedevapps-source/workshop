@@ -618,6 +618,8 @@ body {
         z-index: 1;
         overflow: hidden;
         /* Contain animation */
+        background-color: #FFFFFF;
+        /* White background */
     }
 
     .hero-img {
@@ -628,32 +630,37 @@ body {
         max-height: none;
         margin: 0;
         animation: carLoop 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-        transform: translateX(-50px);
+        transform: translateX(-50px) scale(1.25);
         opacity: 0;
     }
 
     @keyframes carLoop {
         0% {
-            transform: translateX(100px);
-            /* Start from Right */
+            transform: translateX(100px) scale(1.25);
+            /* Start Right + Zoom */
             opacity: 0;
         }
 
         15% {
-            transform: translateX(0);
-            /* Arrive Center */
+            transform: translateX(0) scale(1.25);
+            /* Arrive Center + Zoom */
             opacity: 1;
         }
 
-        85% {
-            transform: translateX(0);
-            /* Stay Center */
+        50% {
+            transform: translateX(0) scale(1.25);
+            /* Stay Center (~2s of 6s loop) -> Adjusted below */
             opacity: 1;
+        }
+
+        65% {
+            transform: translateX(-100px) scale(1.25);
+            /* Exit Left */
+            opacity: 0;
         }
 
         100% {
-            transform: translateX(-100px);
-            /* Exit Left */
+            transform: translateX(-100px) scale(1.25);
             opacity: 0;
         }
     }
