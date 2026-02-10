@@ -132,8 +132,8 @@ body {
     /* Move text up */
     align-items: center;
     text-align: center;
-    padding: 10vh 0 10vh;
-    /* Reduced top padding to move heading up */
+    padding: 10vh 0 0;
+    /* Removed bottom padding */
 }
 
 .hero-bg {
@@ -239,8 +239,8 @@ body {
     width: 100%;
     justify-content: center;
     z-index: 10;
-    padding-bottom: 20px;
-    /* Small breathing room inside */
+    padding-bottom: 5px;
+    /* Pinned as low as possible */
 }
 
 .btn-pill {
@@ -637,8 +637,8 @@ body {
         padding: 0 40px;
         gap: 15px;
         margin-top: 20px;
-        margin-bottom: 10px;
-        /* Minimize bottom space */
+        margin-bottom: 0;
+        /* Literal bottom */
     }
 
     .btn-pill {
@@ -729,8 +729,8 @@ body {
         justify-content: flex-end;
         height: 100%;
         width: 100%;
-        padding-bottom: 20px;
-        /* Space from bottom */
+        padding-bottom: 5px;
+        /* Full bottom */
     }
 
     .hero-subtitle {
