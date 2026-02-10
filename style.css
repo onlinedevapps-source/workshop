@@ -233,11 +233,14 @@ body {
     display: flex;
     gap: 24px;
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
+    /* Pinned to full bottom */
     left: 0;
     width: 100%;
     justify-content: center;
     z-index: 10;
+    padding-bottom: 20px;
+    /* Small breathing room inside */
 }
 
 .btn-pill {
@@ -634,6 +637,8 @@ body {
         padding: 0 40px;
         gap: 15px;
         margin-top: 20px;
+        margin-bottom: 10px;
+        /* Minimize bottom space */
     }
 
     .btn-pill {
