@@ -611,8 +611,8 @@ body {
 
     .hero-bg {
         position: relative;
-        height: 55vh;
-        /* Increased size for prominence */
+        height: 35vh;
+        /* Reverted size to fit buttons */
         width: 100%;
         margin: 10px 0 30px;
         z-index: 1;
@@ -634,28 +634,26 @@ body {
 
     @keyframes carLoop {
         0% {
-            transform: translateX(-50px);
+            transform: translateX(100px);
+            /* Start from Right */
             opacity: 0;
         }
 
-        20% {
+        15% {
             transform: translateX(0);
+            /* Arrive Center */
             opacity: 1;
         }
 
-        55% {
+        85% {
             transform: translateX(0);
+            /* Stay Center */
             opacity: 1;
-        }
-
-        /* Stay ~2s */
-        75% {
-            transform: translateX(-50px);
-            opacity: 0;
         }
 
         100% {
-            transform: translateX(-50px);
+            transform: translateX(-100px);
+            /* Exit Left */
             opacity: 0;
         }
     }
