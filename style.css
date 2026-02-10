@@ -611,11 +611,13 @@ body {
 
     .hero-bg {
         position: relative;
-        height: 250px;
-        /* Define height for the car image area */
+        height: 45vh;
+        /* Increased size for prominence */
         width: 100%;
-        margin: 20px 0;
+        margin: 10px 0 30px;
         z-index: 1;
+        overflow: hidden;
+        /* Contain animation */
     }
 
     .hero-img {
@@ -625,6 +627,16 @@ body {
         height: 100%;
         max-height: none;
         margin: 0;
+        animation: panInRight 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    @keyframes panInRight {
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 
     .hero-overlay-content {
