@@ -611,8 +611,22 @@ body {
     }
 
     .hero-img {
-        object-position: center 30%;
-        /* Better framing to "zoom out" the subject */
+        object-fit: contain;
+        object-position: center;
+        /* Ensure full car visibility */
+        max-height: 60vh;
+        /* Prevent it from taking too much vertical space if needed */
+        margin-top: 20px;
+    }
+
+    .hero-overlay-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 20px;
+        /* Space from bottom */
     }
 
     .hero-subtitle {
@@ -666,6 +680,10 @@ body {
 
     .hero-cta-group {
         padding: 0 20px;
+        margin-top: auto;
+        /* Push to bottom */
+        margin-bottom: 60px;
+        /* Space above scroll hint */
     }
 
     .section-full {
