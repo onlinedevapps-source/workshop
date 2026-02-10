@@ -145,7 +145,6 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* Reset to center */
 }
 
 .hero-title {
@@ -610,18 +609,22 @@ body {
         margin-bottom: 0.8rem;
     }
 
+    .hero-bg {
+        position: relative;
+        height: 250px;
+        /* Define height for the car image area */
+        width: 100%;
+        margin: 20px 0;
+        z-index: 1;
+    }
+
     .hero-img {
         object-fit: contain;
         object-position: center;
-        /* Ensure full car visibility */
-        max-height: 40vh;
-        /* "Zoom out" effect: Reduced from 60vh to make it roughly 30% smaller */
-        width: 90%;
-        /* Horizontal padding */
-        margin: 0 auto;
-        /* Center it */
-        margin-top: 40px;
-        /* Push down slightly */
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        margin: 0;
     }
 
     .hero-overlay-content {
@@ -685,10 +688,8 @@ body {
 
     .hero-cta-group {
         padding: 0 20px;
-        margin-top: auto;
-        /* Push to bottom */
-        margin-bottom: 60px;
-        /* Space above scroll hint */
+        margin-top: 0;
+        margin-bottom: 40px;
     }
 
     .section-full {
